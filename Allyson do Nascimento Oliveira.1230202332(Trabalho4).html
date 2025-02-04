@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+</head>
+<body>
+     <form id="cadastro" action="/receber_dados.php" method="post">
+     <table border="4" align="center">
+           <tr>
+		   
+            <th colspan="3" align="center">Formulário de Recrutamento</th> 
+			
+          </tr>
+           <tr>
+		   
+            <td align="center">Nome Completo</td>
+            <td align="center"><input type="text" id="NomeCompleto" name="NomeCompleto"></td>
+			
+          </tr>
+		   <tr>
+		   
+            <td align="center">E-mail</td>
+            <td align="center"><input type="email" id="Email" name="Email"></td>
+          
+          </tr>
+           <tr>
+
+            <td align="center">Data de Nascimento</td>
+            <td align="center"><input type="date" id="Data" name="Data" min="1954-07-10" value="dd/mm/yyyy"></td>	
+           
+          </tr>
+		   <tr>
+		   
+		    <td align="center">Sexo</td>
+            <td align="center"><input type="radio" id="Masculino" name="Sexo" value="M">Masculino</td>
+        	<td align="center"><input type="radio" id="Feminino" name="Sexo" value="F">Feminino</td>
+			
+          </tr>
+           <tr>
+		   
+		    <td align="center">Estado Civil</td>
+            <td><select name="Estado Civil" id="Estado Civil">
+            <option value="1">Solteiro(a)</option>
+            <option value="2">Casado(a)</option>
+            <option value="3">Outros</option>
+            </select></td>
+			
+		  </tr>
+           <tr>
+    
+            <td align="center">Áreas de interesse</td>
+            <td align="left">
+
+            <input type="checkbox" id="Análise" name="Análise" value="A">
+            <label for="Análise">Análise</label><br>
+
+            <input type="checkbox" id="Banco de dados" name="Banco de dados" value="B">
+            <label for="Banco de dados">Banco de dados</label><br>
+  
+            <input type="checkbox" id="Desenvolvimento" name="Desenvolvimento" value="D">
+            <label for="Desenvolvimento">Desenvolvimento</label><br>
+            
+           	<input type="checkbox" id="Engenharia de software" name="Engenharia de software" value="E">
+            <label for="Engenharia de software">Engenharia de software</label><br>
+
+            <input type="checkbox" id="Redes de computadores" name="Redes de computadores" value="R">
+            <label for="Redes de computadores">Redes de computadores</label><br>			
+          		   
+		  </tr>
+		   <tr>
+           	
+			<td align="center"><input type="submit" value="Enviar"></td>
+			
+		  </tr>
+            			
+</body>
+</html>
